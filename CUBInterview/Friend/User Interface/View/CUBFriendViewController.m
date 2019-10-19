@@ -315,12 +315,19 @@ typedef NS_ENUM(NSInteger,CUBTestType){
     NSInteger row = [self.dataSource indexOfObject:[filtered firstObject]];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:0];
     
-    [UIView animateWithDuration:0.5f animations:^{
-        [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
-    } completion:^(BOOL finished){
-        self.tableView.tableHeaderView = self.searchController.searchBar;
-        self.searchController.active = YES;
-    }];
+    dispatch_async(dispatch_get_main_queue(), ^(){
+        [UIView animateWithDuration:0.5f animations:^{
+            
+            [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+            
+        } completion:^(BOOL finished){
+            
+            self.tableView.tableHeaderView = self.searchController.searchBar;
+            
+            self.searchController.active = YES;
+            
+        }];
+    });
     
 }
 
