@@ -30,7 +30,6 @@ typedef NS_ENUM(NSInteger,CUBTestType){
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
-
 @property (nonatomic, strong) UISearchController *searchController;
 @property (nonatomic, strong) NSMutableArray *results;
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
@@ -291,7 +290,7 @@ typedef NS_ENUM(NSInteger,CUBTestType){
        }
        
        [self.tableView reloadData];
-
+    
 }
 
 #pragma mark - UISearchControllerDelegate
