@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58FA17429812062A9BC5D3FA /* Pods_CUBInterview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1302952F02F6494425229F2B /* Pods_CUBInterview.framework */; };
+		7125C6EE23579392007B73B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7125C6ED23579392007B73B9 /* AppDelegate.m */; };
+		7125C6F123579392007B73B9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7125C6F023579392007B73B9 /* SceneDelegate.m */; };
+		7125C6FC23579394007B73B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7125C6FB23579394007B73B9 /* Assets.xcassets */; };
+		7125C6FF23579394007B73B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7125C6FD23579394007B73B9 /* LaunchScreen.storyboard */; };
+		7125C70223579394007B73B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7125C70123579394007B73B9 /* main.m */; };
+		715ABEC123599E31004D0BF7 /* CUBNoFriendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 715ABEC023599E31004D0BF7 /* CUBNoFriendTableViewCell.m */; };
+		715ABEC423599E91004D0BF7 /* CUBNoFriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 715ABEC323599E91004D0BF7 /* CUBNoFriendModel.m */; };
+		715ABEC72359AE79004D0BF7 /* CUBSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 715ABEC62359AE79004D0BF7 /* CUBSearchTableViewCell.m */; };
+		715ABECA2359AEF4004D0BF7 /* CUBSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 715ABEC92359AEF4004D0BF7 /* CUBSearchModel.m */; };
+		715ABECD2359C5EC004D0BF7 /* CUBInviteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 715ABECC2359C5EC004D0BF7 /* CUBInviteModel.m */; };
+		715ABED02359C7FC004D0BF7 /* CUBInviteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 715ABECF2359C7FC004D0BF7 /* CUBInviteTableViewCell.m */; };
+		71ED3CAF2358891D0069DD51 /* CUBApiClientCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3C922358891D0069DD51 /* CUBApiClientCenter.m */; };
+		71ED3CB02358891D0069DD51 /* CUBNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3C932358891D0069DD51 /* CUBNetworking.m */; };
+		71ED3CB62358891D0069DD51 /* CUBAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3CAD2358891D0069DD51 /* CUBAppDependencies.m */; };
+		71ED3CB72358891D0069DD51 /* CUBRootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3CAE2358891D0069DD51 /* CUBRootWireframe.m */; };
+		71ED3CCC2358899C0069DD51 /* CUBFriendDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3CBC2358899C0069DD51 /* CUBFriendDataManager.m */; };
+		71ED3CCD2358899C0069DD51 /* CUBFriendInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3CBF2358899C0069DD51 /* CUBFriendInteractor.m */; };
+		71ED3CCE2358899C0069DD51 /* CUBFriendPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3CC52358899C0069DD51 /* CUBFriendPresenter.m */; };
+		71ED3CCF2358899C0069DD51 /* CUBFriendWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3CC82358899C0069DD51 /* CUBFriendWireframe.m */; };
+		71ED3CD02358899C0069DD51 /* CUBFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3CCA2358899C0069DD51 /* CUBFriendViewController.m */; };
+		71ED3CD423589B2E0069DD51 /* CUBFriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3CD323589B2E0069DD51 /* CUBFriendModel.m */; };
+		71ED3CD72358BA8D0069DD51 /* CUBFriendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3CD62358BA8D0069DD51 /* CUBFriendTableViewCell.m */; };
+		71ED3CDA2358E3EF0069DD51 /* CUBTableViewCellBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3CD92358E3EF0069DD51 /* CUBTableViewCellBaseClass.m */; };
+		71ED3CDD2358E8870069DD51 /* CUBModelBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3CDC2358E8870069DD51 /* CUBModelBaseClass.m */; };
+		71ED3CE02358EA520069DD51 /* CUBUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3CDF2358EA520069DD51 /* CUBUserModel.m */; };
+		71ED3CE32358F5950069DD51 /* CUBUserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3CE22358F5950069DD51 /* CUBUserTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1302952F02F6494425229F2B /* Pods_CUBInterview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CUBInterview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27559DF2F09C6EDDC037C2E2 /* Pods-CUBInterview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CUBInterview.release.xcconfig"; path = "Target Support Files/Pods-CUBInterview/Pods-CUBInterview.release.xcconfig"; sourceTree = "<group>"; };
+		7125C6E923579392007B73B9 /* CUBInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CUBInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7125C6EC23579392007B73B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7125C6ED23579392007B73B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7125C6EF23579392007B73B9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		7125C6F023579392007B73B9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		7125C6FB23579394007B73B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7125C6FE23579394007B73B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7125C70023579394007B73B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7125C70123579394007B73B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		715ABEBF23599E31004D0BF7 /* CUBNoFriendTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBNoFriendTableViewCell.h; sourceTree = "<group>"; };
+		715ABEC023599E31004D0BF7 /* CUBNoFriendTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUBNoFriendTableViewCell.m; sourceTree = "<group>"; };
+		715ABEC223599E91004D0BF7 /* CUBNoFriendModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBNoFriendModel.h; sourceTree = "<group>"; };
+		715ABEC323599E91004D0BF7 /* CUBNoFriendModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUBNoFriendModel.m; sourceTree = "<group>"; };
+		715ABEC52359AE79004D0BF7 /* CUBSearchTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBSearchTableViewCell.h; sourceTree = "<group>"; };
+		715ABEC62359AE79004D0BF7 /* CUBSearchTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUBSearchTableViewCell.m; sourceTree = "<group>"; };
+		715ABEC82359AEF4004D0BF7 /* CUBSearchModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBSearchModel.h; sourceTree = "<group>"; };
+		715ABEC92359AEF4004D0BF7 /* CUBSearchModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUBSearchModel.m; sourceTree = "<group>"; };
+		715ABECB2359C5EB004D0BF7 /* CUBInviteModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBInviteModel.h; sourceTree = "<group>"; };
+		715ABECC2359C5EC004D0BF7 /* CUBInviteModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUBInviteModel.m; sourceTree = "<group>"; };
+		715ABECE2359C7FC004D0BF7 /* CUBInviteTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBInviteTableViewCell.h; sourceTree = "<group>"; };
+		715ABECF2359C7FC004D0BF7 /* CUBInviteTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUBInviteTableViewCell.m; sourceTree = "<group>"; };
+		715ABED1235A128A004D0BF7 /* CUBTableViewCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBTableViewCellProtocol.h; sourceTree = "<group>"; };
+		71ED3C922358891D0069DD51 /* CUBApiClientCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUBApiClientCenter.m; sourceTree = "<group>"; };
+		71ED3C932358891D0069DD51 /* CUBNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUBNetworking.m; sourceTree = "<group>"; };
+		71ED3C942358891D0069DD51 /* CUBApiClientCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUBApiClientCenter.h; sourceTree = "<group>"; };
+		71ED3C952358891D0069DD51 /* CUBNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUBNetworking.h; sourceTree = "<group>"; };
+		71ED3CAB2358891D0069DD51 /* CUBAppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUBAppDependencies.h; sourceTree = "<group>"; };
+		71ED3CAC2358891D0069DD51 /* CUBRootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUBRootWireframe.h; sourceTree = "<group>"; };
+		71ED3CAD2358891D0069DD51 /* CUBAppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUBAppDependencies.m; sourceTree = "<group>"; };
+		71ED3CAE2358891D0069DD51 /* CUBRootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUBRootWireframe.m; sourceTree = "<group>"; };
+		71ED3CBB2358899C0069DD51 /* CUBFriendDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUBFriendDataManager.h; sourceTree = "<group>"; };
+		71ED3CBC2358899C0069DD51 /* CUBFriendDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUBFriendDataManager.m; sourceTree = "<group>"; };
+		71ED3CBE2358899C0069DD51 /* CUBFriendInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUBFriendInteractor.h; sourceTree = "<group>"; };
+		71ED3CBF2358899C0069DD51 /* CUBFriendInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUBFriendInteractor.m; sourceTree = "<group>"; };
+		71ED3CC22358899C0069DD51 /* CUBFriendModuleInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUBFriendModuleInterface.h; sourceTree = "<group>"; };
+		71ED3CC42358899C0069DD51 /* CUBFriendPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUBFriendPresenter.h; sourceTree = "<group>"; };
+		71ED3CC52358899C0069DD51 /* CUBFriendPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUBFriendPresenter.m; sourceTree = "<group>"; };
+		71ED3CC72358899C0069DD51 /* CUBFriendWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUBFriendWireframe.h; sourceTree = "<group>"; };
+		71ED3CC82358899C0069DD51 /* CUBFriendWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUBFriendWireframe.m; sourceTree = "<group>"; };
+		71ED3CCA2358899C0069DD51 /* CUBFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUBFriendViewController.m; sourceTree = "<group>"; };
+		71ED3CCB2358899C0069DD51 /* CUBFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUBFriendViewController.h; sourceTree = "<group>"; };
+		71ED3CD223589B2E0069DD51 /* CUBFriendModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBFriendModel.h; sourceTree = "<group>"; };
+		71ED3CD323589B2E0069DD51 /* CUBFriendModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUBFriendModel.m; sourceTree = "<group>"; };
+		71ED3CD52358BA8D0069DD51 /* CUBFriendTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBFriendTableViewCell.h; sourceTree = "<group>"; };
+		71ED3CD62358BA8D0069DD51 /* CUBFriendTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUBFriendTableViewCell.m; sourceTree = "<group>"; };
+		71ED3CD82358E3EF0069DD51 /* CUBTableViewCellBaseClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBTableViewCellBaseClass.h; sourceTree = "<group>"; };
+		71ED3CD92358E3EF0069DD51 /* CUBTableViewCellBaseClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUBTableViewCellBaseClass.m; sourceTree = "<group>"; };
+		71ED3CDB2358E8870069DD51 /* CUBModelBaseClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBModelBaseClass.h; sourceTree = "<group>"; };
+		71ED3CDC2358E8870069DD51 /* CUBModelBaseClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUBModelBaseClass.m; sourceTree = "<group>"; };
+		71ED3CDE2358EA520069DD51 /* CUBUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBUserModel.h; sourceTree = "<group>"; };
+		71ED3CDF2358EA520069DD51 /* CUBUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUBUserModel.m; sourceTree = "<group>"; };
+		71ED3CE12358F5950069DD51 /* CUBUserTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBUserTableViewCell.h; sourceTree = "<group>"; };
+		71ED3CE22358F5950069DD51 /* CUBUserTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUBUserTableViewCell.m; sourceTree = "<group>"; };
+		EBCCD127A69ABD4AD7AC5532 /* Pods-CUBInterview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CUBInterview.debug.xcconfig"; path = "Target Support Files/Pods-CUBInterview/Pods-CUBInterview.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7125C6E623579392007B73B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58FA17429812062A9BC5D3FA /* Pods_CUBInterview.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7125C6E023579392007B73B9 = {
+			isa = PBXGroup;
+			children = (
+				7125C6EB23579392007B73B9 /* CUBInterview */,
+				7125C6EA23579392007B73B9 /* Products */,
+				C4B1B8328E4D24C528B2D377 /* Pods */,
+				F5260973CFF7D799CF04A55A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7125C6EA23579392007B73B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7125C6E923579392007B73B9 /* CUBInterview.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7125C6EB23579392007B73B9 /* CUBInterview */ = {
+			isa = PBXGroup;
+			children = (
+				7125C6EC23579392007B73B9 /* AppDelegate.h */,
+				7125C6ED23579392007B73B9 /* AppDelegate.m */,
+				7125C6EF23579392007B73B9 /* SceneDelegate.h */,
+				7125C6F023579392007B73B9 /* SceneDelegate.m */,
+				71ED3C912358891D0069DD51 /* Utility */,
+				71ED3CAA2358891D0069DD51 /* RootWireframe */,
+				71ED3CB82358899C0069DD51 /* Friend */,
+				7125C6FB23579394007B73B9 /* Assets.xcassets */,
+				7125C6FD23579394007B73B9 /* LaunchScreen.storyboard */,
+				7125C70023579394007B73B9 /* Info.plist */,
+				7125C70123579394007B73B9 /* main.m */,
+			);
+			path = CUBInterview;
+			sourceTree = "<group>";
+		};
+		71ED3C912358891D0069DD51 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				71ED3C952358891D0069DD51 /* CUBNetworking.h */,
+				71ED3C932358891D0069DD51 /* CUBNetworking.m */,
+				71ED3C942358891D0069DD51 /* CUBApiClientCenter.h */,
+				71ED3C922358891D0069DD51 /* CUBApiClientCenter.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		71ED3CAA2358891D0069DD51 /* RootWireframe */ = {
+			isa = PBXGroup;
+			children = (
+				71ED3CAB2358891D0069DD51 /* CUBAppDependencies.h */,
+				71ED3CAD2358891D0069DD51 /* CUBAppDependencies.m */,
+				71ED3CAC2358891D0069DD51 /* CUBRootWireframe.h */,
+				71ED3CAE2358891D0069DD51 /* CUBRootWireframe.m */,
+			);
+			path = RootWireframe;
+			sourceTree = "<group>";
+		};
+		71ED3CB82358899C0069DD51 /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				71ED3CC02358899C0069DD51 /* User Interface */,
+				71ED3CB92358899C0069DD51 /* Application Logic */,
+			);
+			path = Friend;
+			sourceTree = "<group>";
+		};
+		71ED3CB92358899C0069DD51 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				71ED3CBD2358899C0069DD51 /* Interactor */,
+				71ED3CBA2358899C0069DD51 /* DataManager */,
+				71ED3CD123589AE20069DD51 /* Model */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		71ED3CBA2358899C0069DD51 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				71ED3CBB2358899C0069DD51 /* CUBFriendDataManager.h */,
+				71ED3CBC2358899C0069DD51 /* CUBFriendDataManager.m */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		71ED3CBD2358899C0069DD51 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				71ED3CBE2358899C0069DD51 /* CUBFriendInteractor.h */,
+				71ED3CBF2358899C0069DD51 /* CUBFriendInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		71ED3CC02358899C0069DD51 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				71ED3CC92358899C0069DD51 /* View */,
+				71ED3CC12358899C0069DD51 /* Module Interface */,
+				71ED3CC62358899C0069DD51 /* Wireframe */,
+				71ED3CC32358899C0069DD51 /* Presenter */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		71ED3CC12358899C0069DD51 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				71ED3CC22358899C0069DD51 /* CUBFriendModuleInterface.h */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		71ED3CC32358899C0069DD51 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				71ED3CC42358899C0069DD51 /* CUBFriendPresenter.h */,
+				71ED3CC52358899C0069DD51 /* CUBFriendPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		71ED3CC62358899C0069DD51 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				71ED3CC72358899C0069DD51 /* CUBFriendWireframe.h */,
+				71ED3CC82358899C0069DD51 /* CUBFriendWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		71ED3CC92358899C0069DD51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71ED3CCB2358899C0069DD51 /* CUBFriendViewController.h */,
+				71ED3CCA2358899C0069DD51 /* CUBFriendViewController.m */,
+				715ABED1235A128A004D0BF7 /* CUBTableViewCellProtocol.h */,
+				71ED3CD82358E3EF0069DD51 /* CUBTableViewCellBaseClass.h */,
+				71ED3CD92358E3EF0069DD51 /* CUBTableViewCellBaseClass.m */,
+				71ED3CE12358F5950069DD51 /* CUBUserTableViewCell.h */,
+				71ED3CE22358F5950069DD51 /* CUBUserTableViewCell.m */,
+				715ABEBF23599E31004D0BF7 /* CUBNoFriendTableViewCell.h */,
+				715ABEC023599E31004D0BF7 /* CUBNoFriendTableViewCell.m */,
+				715ABEC52359AE79004D0BF7 /* CUBSearchTableViewCell.h */,
+				715ABEC62359AE79004D0BF7 /* CUBSearchTableViewCell.m */,
+				71ED3CD52358BA8D0069DD51 /* CUBFriendTableViewCell.h */,
+				71ED3CD62358BA8D0069DD51 /* CUBFriendTableViewCell.m */,
+				715ABECE2359C7FC004D0BF7 /* CUBInviteTableViewCell.h */,
+				715ABECF2359C7FC004D0BF7 /* CUBInviteTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		71ED3CD123589AE20069DD51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71ED3CDB2358E8870069DD51 /* CUBModelBaseClass.h */,
+				71ED3CDC2358E8870069DD51 /* CUBModelBaseClass.m */,
+				71ED3CDE2358EA520069DD51 /* CUBUserModel.h */,
+				71ED3CDF2358EA520069DD51 /* CUBUserModel.m */,
+				715ABEC223599E91004D0BF7 /* CUBNoFriendModel.h */,
+				715ABEC323599E91004D0BF7 /* CUBNoFriendModel.m */,
+				715ABEC82359AEF4004D0BF7 /* CUBSearchModel.h */,
+				715ABEC92359AEF4004D0BF7 /* CUBSearchModel.m */,
+				71ED3CD223589B2E0069DD51 /* CUBFriendModel.h */,
+				71ED3CD323589B2E0069DD51 /* CUBFriendModel.m */,
+				715ABECB2359C5EB004D0BF7 /* CUBInviteModel.h */,
+				715ABECC2359C5EC004D0BF7 /* CUBInviteModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4B1B8328E4D24C528B2D377 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBCCD127A69ABD4AD7AC5532 /* Pods-CUBInterview.debug.xcconfig */,
+				27559DF2F09C6EDDC037C2E2 /* Pods-CUBInterview.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F5260973CFF7D799CF04A55A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1302952F02F6494425229F2B /* Pods_CUBInterview.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7125C6E823579392007B73B9 /* CUBInterview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7125C70523579394007B73B9 /* Build configuration list for PBXNativeTarget "CUBInterview" */;
+			buildPhases = (
+				19197CFC81B1CDF153F84B3E /* [CP] Check Pods Manifest.lock */,
+				7125C6E523579392007B73B9 /* Sources */,
+				7125C6E623579392007B73B9 /* Frameworks */,
+				7125C6E723579392007B73B9 /* Resources */,
+				7556CCC146A965F8AEBEE126 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CUBInterview;
+			productName = CUBInterview;
+			productReference = 7125C6E923579392007B73B9 /* CUBInterview.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7125C6E123579392007B73B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = KunChan;
+				TargetAttributes = {
+					7125C6E823579392007B73B9 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 7125C6E423579392007B73B9 /* Build configuration list for PBXProject "CUBInterview" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7125C6E023579392007B73B9;
+			productRefGroup = 7125C6EA23579392007B73B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7125C6E823579392007B73B9 /* CUBInterview */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7125C6E723579392007B73B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7125C6FF23579394007B73B9 /* LaunchScreen.storyboard in Resources */,
+				7125C6FC23579394007B73B9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19197CFC81B1CDF153F84B3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CUBInterview-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7556CCC146A965F8AEBEE126 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CUBInterview/Pods-CUBInterview-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CUBInterview/Pods-CUBInterview-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CUBInterview/Pods-CUBInterview-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7125C6E523579392007B73B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71ED3CE02358EA520069DD51 /* CUBUserModel.m in Sources */,
+				71ED3CCC2358899C0069DD51 /* CUBFriendDataManager.m in Sources */,
+				715ABECA2359AEF4004D0BF7 /* CUBSearchModel.m in Sources */,
+				71ED3CCE2358899C0069DD51 /* CUBFriendPresenter.m in Sources */,
+				71ED3CB02358891D0069DD51 /* CUBNetworking.m in Sources */,
+				71ED3CB62358891D0069DD51 /* CUBAppDependencies.m in Sources */,
+				71ED3CD72358BA8D0069DD51 /* CUBFriendTableViewCell.m in Sources */,
+				71ED3CB72358891D0069DD51 /* CUBRootWireframe.m in Sources */,
+				715ABECD2359C5EC004D0BF7 /* CUBInviteModel.m in Sources */,
+				7125C70223579394007B73B9 /* main.m in Sources */,
+				7125C6EE23579392007B73B9 /* AppDelegate.m in Sources */,
+				71ED3CCD2358899C0069DD51 /* CUBFriendInteractor.m in Sources */,
+				71ED3CD423589B2E0069DD51 /* CUBFriendModel.m in Sources */,
+				71ED3CE32358F5950069DD51 /* CUBUserTableViewCell.m in Sources */,
+				71ED3CDD2358E8870069DD51 /* CUBModelBaseClass.m in Sources */,
+				715ABEC123599E31004D0BF7 /* CUBNoFriendTableViewCell.m in Sources */,
+				7125C6F123579392007B73B9 /* SceneDelegate.m in Sources */,
+				71ED3CD02358899C0069DD51 /* CUBFriendViewController.m in Sources */,
+				71ED3CAF2358891D0069DD51 /* CUBApiClientCenter.m in Sources */,
+				715ABEC72359AE79004D0BF7 /* CUBSearchTableViewCell.m in Sources */,
+				715ABEC423599E91004D0BF7 /* CUBNoFriendModel.m in Sources */,
+				71ED3CCF2358899C0069DD51 /* CUBFriendWireframe.m in Sources */,
+				71ED3CDA2358E3EF0069DD51 /* CUBTableViewCellBaseClass.m in Sources */,
+				715ABED02359C7FC004D0BF7 /* CUBInviteTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7125C6FD23579394007B73B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7125C6FE23579394007B73B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7125C70323579394007B73B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7125C70423579394007B73B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7125C70623579394007B73B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBCCD127A69ABD4AD7AC5532 /* Pods-CUBInterview.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8SF24726VR;
+				INFOPLIST_FILE = CUBInterview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.okami3363.CUBInterview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7125C70723579394007B73B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27559DF2F09C6EDDC037C2E2 /* Pods-CUBInterview.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8SF24726VR;
+				INFOPLIST_FILE = CUBInterview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.okami3363.CUBInterview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7125C6E423579392007B73B9 /* Build configuration list for PBXProject "CUBInterview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7125C70323579394007B73B9 /* Debug */,
+				7125C70423579394007B73B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7125C70523579394007B73B9 /* Build configuration list for PBXNativeTarget "CUBInterview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7125C70623579394007B73B9 /* Debug */,
+				7125C70723579394007B73B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7125C6E123579392007B73B9 /* Project object */;
+}
