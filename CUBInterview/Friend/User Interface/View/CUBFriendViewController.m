@@ -280,12 +280,12 @@ typedef NS_ENUM(NSInteger,CUBTestType){
        }
        for (id model in self.dataSource) {
            
-           CUBFriendModel *kindFriendModel = nil;
-           if ([model isKindOfClass:[CUBFriendModel class]]) {
-               kindFriendModel = model;
+           CUBFriendModel *memberFriendModel = nil;
+           if ([model isMemberOfClass:[CUBFriendModel class]]) {
+               memberFriendModel = model;
                
-               if ([kindFriendModel.name.lowercaseString rangeOfString:inputStr.lowercaseString].location != NSNotFound) {
-                   [self.results addObject:kindFriendModel];
+               if ([memberFriendModel.name.lowercaseString rangeOfString:inputStr.lowercaseString].location != NSNotFound) {
+                   [self.results addObject:memberFriendModel];
                }
            }
        }

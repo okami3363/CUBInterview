@@ -76,6 +76,9 @@
         
     }];
     
+    self.addButton.titleEdgeInsets = UIEdgeInsetsMake(0, -27, 0, 0);
+    self.addButton.imageEdgeInsets = UIEdgeInsetsMake(0, 160, 0, 0);
+    
     [self.addButton layoutIfNeeded];
     CAGradientLayer *gradient = [CAGradientLayer layer];
     gradient.frame = self.addButton.bounds;
@@ -86,8 +89,7 @@
                        (id)[[UIColor colorWithRed:166/255.0f green:204/255.0f blue:66/255.0f alpha:1.0f] CGColor],
                        nil];
     [self.addButton.layer insertSublayer:gradient atIndex:0];
-    self.addButton.titleEdgeInsets = UIEdgeInsetsMake(0, -27, 0, 0);
-    self.addButton.imageEdgeInsets = UIEdgeInsetsMake(0, 160, 0, 0);
+    
     
     
 }
