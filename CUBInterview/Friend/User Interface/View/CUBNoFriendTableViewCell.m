@@ -34,9 +34,8 @@
     self.addButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.addButton setTitle:@"加好友" forState:UIControlStateNormal];
     [self.addButton setImage:[UIImage imageNamed:@"add"] forState:UIControlStateNormal];
-    self.addButton.layer.cornerRadius = 20;
-    self.addButton.layer.masksToBounds = YES;
-    
+    self.addButton.titleEdgeInsets = UIEdgeInsetsMake(0, -27, 0, 0);
+    self.addButton.imageEdgeInsets = UIEdgeInsetsMake(0, 160, 0, 0);
     [self.contentView addSubview:self.addButton];
     
 }
@@ -76,9 +75,6 @@
         
     }];
     
-    self.addButton.titleEdgeInsets = UIEdgeInsetsMake(0, -27, 0, 0);
-    self.addButton.imageEdgeInsets = UIEdgeInsetsMake(0, 160, 0, 0);
-    
     [self.addButton layoutIfNeeded];
     CAGradientLayer *gradient = [CAGradientLayer layer];
     gradient.frame = self.addButton.bounds;
@@ -89,8 +85,8 @@
                        (id)[[UIColor colorWithRed:166/255.0f green:204/255.0f blue:66/255.0f alpha:1.0f] CGColor],
                        nil];
     [self.addButton.layer insertSublayer:gradient atIndex:0];
-    
-    
+    self.addButton.layer.cornerRadius = 20;
+    self.addButton.layer.masksToBounds = YES;
     
 }
 
