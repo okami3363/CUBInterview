@@ -38,7 +38,7 @@
     //内容类型
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json",@"text/javascript",@"text/html", nil];
     //get请求
-    [manager GET:urlString parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    [manager GET:urlString parameters:nil headers:@{} progress:^(NSProgress * _Nonnull downloadProgress) {
         //数据请求的进度
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         success(responseObject);
