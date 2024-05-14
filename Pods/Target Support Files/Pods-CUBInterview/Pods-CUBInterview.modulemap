@@ -1,0 +1,6 @@
+framework module Pods_CUBInterview {
+  umbrella header "Pods-CUBInterview-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -62,11 +62,11 @@ xcuserdata
 
 #
 
-*.xcworkspace
+#*.xcworkspace
 
-Podfile.lock
+#Podfile.lock
 
-Pods/
+#Pods/
 
 # Carthage
 
