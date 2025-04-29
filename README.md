@@ -3,8 +3,6 @@
 
 這是一個以 VIPER 架構開發的 iOS 小作品，為應徵國泰世華面試時的實作題目所完成。此專案展示了我在 iOS 架構設計、模組分離、網路處理及畫面導覽設計上的能力。
 
-![screenshot](https://raw.githubusercontent.com/okami3363/CUBInterview/main/CUBInterview/Screenshot.png)
-
 ---
 
 ## ✨ 功能說明
