@@ -33,7 +33,7 @@
 
 ## 🚀 執行方式
 
-1. 使用 Xcode 15 或以上版本打開 `CUBInterview.xcodeproj`
+1. 使用 Xcode 15 或以上版本打開 `CUBInterview.xcworkspace`
 2. 執行模擬器或實體機（支援 iOS 15+）
 3. 無需額外安裝第三方套件（已透過 CocoaPods 整合）
 
