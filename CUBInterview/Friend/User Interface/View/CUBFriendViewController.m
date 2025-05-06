@@ -19,18 +19,11 @@
 #import "CUBSearchModel.h"
 #import "CUBInviteModel.h"
 
-typedef NS_ENUM(NSInteger,CUBTestType){
-    CUBTestType1 = 1,   //(1) 無好友畫面
-    CUBTestType2,       //(2) 只有好友列表
-    CUBTestType3,       //(3) 好友列表含邀請
-};
-
 @interface CUBFriendViewController () <UITableViewDataSource, UISearchResultsUpdating, CUBTableViewCellProtocol, UISearchControllerDelegate, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UISearchController *searchController;
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
-@property CUBTestType testType;
 
 @end
 
@@ -42,9 +35,7 @@ typedef NS_ENUM(NSInteger,CUBTestType){
     
     [self setupUI];
     [self setupAutolayout];
-    
-    self.testType = CUBTestType1;
-    
+        
     [self.eventHandler get_status_no_friend:^(NSArray *dataSource) {
         self.eventHandler.dataSource = dataSource.mutableCopy;
         [self.tableView reloadData];
@@ -96,7 +87,7 @@ typedef NS_ENUM(NSInteger,CUBTestType){
 
 - (void)refresh {
     
-    switch (self.testType) {
+    switch (self.eventHandler.testType) {
         case CUBTestType1: {
             
             [self.eventHandler get_status_no_friend:^(NSArray *dataSource) {
@@ -330,7 +321,7 @@ typedef NS_ENUM(NSInteger,CUBTestType){
 - (void)test1 {
     
     [self.eventHandler get_status_no_friend:^(NSArray *dataSource) {
-        self.testType = CUBTestType1;
+        self.eventHandler.testType = CUBTestType1;
         self.eventHandler.dataSource = dataSource.mutableCopy;
         [self.tableView reloadData];
     }];
@@ -340,7 +331,7 @@ typedef NS_ENUM(NSInteger,CUBTestType){
 - (void)test2 {
     
     [self.eventHandler get_status_friend:^(NSArray *dataSource) {
-        self.testType = CUBTestType2;
+        self.eventHandler.testType = CUBTestType2;
         self.eventHandler.dataSource = dataSource.mutableCopy;
         [self.tableView reloadData];
     }];
@@ -350,7 +341,7 @@ typedef NS_ENUM(NSInteger,CUBTestType){
 - (void)test3 {
     
     [self.eventHandler get_status_friend_and_invite:^(NSArray *dataSource) {
-        self.testType = CUBTestType3;
+        self.eventHandler.testType = CUBTestType3;
         self.eventHandler.dataSource = dataSource.mutableCopy;
         [self.tableView reloadData];
     }];

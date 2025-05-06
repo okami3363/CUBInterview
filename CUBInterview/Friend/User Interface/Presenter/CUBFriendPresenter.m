@@ -15,6 +15,7 @@
 {
     self = [super init];
     if (self) {
+        _testType = CUBTestType1;
         _dataSource = @[].mutableCopy;
         _results = @[].mutableCopy;
     }
