@@ -11,17 +11,6 @@
 
 @implementation CUBFriendPresenter
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        _testType = CUBTestType1;
-        _dataSource = @[].mutableCopy;
-        _results = @[].mutableCopy;
-    }
-    return self;
-}
-
 - (void)get_status_no_friend:(void(^)(NSArray*))entitiesData {
     [self.interactor get_status_no_friend:entitiesData];
 }
@@ -42,16 +31,21 @@
     return self.dataSource;
 }
 
+- (void)updateResults:(NSArray *)data {
+    self.results = data.mutableCopy;
+}
+
 - (NSMutableArray *)getResults {
     return self.results;
+}
+
+- (void)updateTestType:(CUBTestType)type {
+    self.testType = type;
 }
 
 - (CUBTestType)getTestType {
     return self.testType;
 }
 
-- (void)updateTestType:(CUBTestType)type {
-    self.testType = type;
-}
 
 @end

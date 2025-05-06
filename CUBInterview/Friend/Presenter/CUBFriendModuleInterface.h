@@ -23,8 +23,9 @@ typedef NS_ENUM(NSInteger,CUBTestType){
 - (void)get_status_friend_and_invite:(void(^)(NSArray*))entitiesData;
 - (void)updateDataSource:(NSArray *)data;
 - (NSMutableArray *)getDataSource;
+- (void)updateResults:(NSArray *)data;
 - (NSMutableArray *)getResults;
-- (CUBTestType)getTestType;
 - (void)updateTestType:(CUBTestType)type;
+- (CUBTestType)getTestType;
 
 @end

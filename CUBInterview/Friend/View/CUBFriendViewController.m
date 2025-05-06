@@ -29,13 +29,15 @@
 
 @implementation CUBFriendViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     [self setupUI];
     [self setupAutolayout];
-        
+
+    [self setupPresenterDate];
     [self.eventHandler get_status_no_friend:^(NSArray *dataSource) {
         [self.eventHandler updateDataSource:dataSource];
         [self.tableView reloadData];
@@ -83,6 +85,12 @@
         
     }];
     
+}
+
+- (void)setupPresenterDate {
+    [self.eventHandler updateTestType:CUBTestType1];
+    [self.eventHandler updateDataSource:@[].mutableCopy];
+    [self.eventHandler updateResults:@[].mutableCopy];
 }
 
 - (void)refresh {
