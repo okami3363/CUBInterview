@@ -61,6 +61,7 @@
 		715ABECE2359C7FC004D0BF7 /* CUBInviteTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBInviteTableViewCell.h; sourceTree = "<group>"; };
 		715ABECF2359C7FC004D0BF7 /* CUBInviteTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUBInviteTableViewCell.m; sourceTree = "<group>"; };
 		715ABED1235A128A004D0BF7 /* CUBTableViewCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBTableViewCellProtocol.h; sourceTree = "<group>"; };
+		71849D0A2DCA4CFF00CF15F2 /* CUBFriendModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBFriendModuleInterface.h; sourceTree = "<group>"; };
 		71ED3C922358891D0069DD51 /* CUBApiClientCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUBApiClientCenter.m; sourceTree = "<group>"; };
 		71ED3C932358891D0069DD51 /* CUBNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUBNetworking.m; sourceTree = "<group>"; };
 		71ED3C942358891D0069DD51 /* CUBApiClientCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUBApiClientCenter.h; sourceTree = "<group>"; };
@@ -198,6 +199,7 @@
 		71ED3CC32358899C0069DD51 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				71849D0A2DCA4CFF00CF15F2 /* CUBFriendModuleInterface.h */,
 				71ED3CC42358899C0069DD51 /* CUBFriendPresenter.h */,
 				71ED3CC52358899C0069DD51 /* CUBFriendPresenter.m */,
 			);

@@ -34,4 +34,24 @@
     [self.interactor get_status_friend_and_invite:entitiesData];
 }
 
+- (void)updateDataSource:(NSArray *)data {
+    self.dataSource = data.mutableCopy;
+}
+
+- (NSMutableArray *)getDataSource {
+    return self.dataSource;
+}
+
+- (NSMutableArray *)getResults {
+    return self.results;
+}
+
+- (CUBTestType)getTestType {
+    return self.testType;
+}
+
+- (void)updateTestType:(CUBTestType)type {
+    self.testType = type;
+}
+
 @end

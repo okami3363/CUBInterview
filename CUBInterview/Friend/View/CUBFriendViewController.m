@@ -37,7 +37,7 @@
     [self setupAutolayout];
         
     [self.eventHandler get_status_no_friend:^(NSArray *dataSource) {
-        self.eventHandler.dataSource = dataSource.mutableCopy;
+        [self.eventHandler updateDataSource:dataSource];
         [self.tableView reloadData];
     }];
     
@@ -87,11 +87,12 @@
 
 - (void)refresh {
     
-    switch (self.eventHandler.testType) {
+    switch ([self.eventHandler getTestType]) {
         case CUBTestType1: {
             
             [self.eventHandler get_status_no_friend:^(NSArray *dataSource) {
-                self.eventHandler.dataSource = dataSource.mutableCopy;
+                [self.eventHandler updateDataSource:dataSource];
+                
                 [self.tableView reloadData];
                 [self.refreshControl endRefreshing];
             }];
@@ -102,7 +103,7 @@
         case CUBTestType2: {
             
             [self.eventHandler get_status_friend:^(NSArray *dataSource) {
-                self.eventHandler.dataSource = dataSource.mutableCopy;
+                [self.eventHandler updateDataSource:dataSource];
                 [self.tableView reloadData];
                 [self.refreshControl endRefreshing];
             }];
@@ -113,7 +114,7 @@
         case CUBTestType3: {
             
             [self.eventHandler get_status_friend_and_invite:^(NSArray *dataSource) {
-                self.eventHandler.dataSource = dataSource.mutableCopy;
+                [self.eventHandler updateDataSource:dataSource];
                 [self.tableView reloadData];
                 [self.refreshControl endRefreshing];
             }];
@@ -140,8 +141,7 @@
         }
         
         NSMutableIndexSet *idxSet = [NSMutableIndexSet indexSetWithIndexesInRange:NSMakeRange(indexPath.row+1, leaderModel.group.count)];
-        
-        [self.eventHandler.dataSource insertObjects:leaderModel.group atIndexes:idxSet];
+        [[self.eventHandler getDataSource] insertObjects:leaderModel.group atIndexes:idxSet];
         
         dispatch_async(dispatch_get_main_queue(), ^(){
             
@@ -168,7 +168,7 @@
     dispatch_async(createQueue, ^(){
         
         NSPredicate *p = [NSPredicate predicateWithFormat:@"self isMemberOfClass: %@", [CUBInviteModel class]];
-        NSArray * filtered = [self.eventHandler.dataSource filteredArrayUsingPredicate:p];
+        NSArray * filtered = [[self.eventHandler getDataSource] filteredArrayUsingPredicate:p];
         
         NSPredicate *predicate = [NSPredicate predicateWithFormat: @"isLeader == YES"];
         CUBInviteModel *leaderModel = nil;
@@ -180,7 +180,7 @@
         
         if (!leaderModel) return;
         
-        NSInteger row = [self.eventHandler.dataSource indexOfObject:leaderModel];
+        NSInteger row = [[self.eventHandler getDataSource] indexOfObject:leaderModel];
         
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:0];
         
@@ -190,7 +190,7 @@
             [indexPaths addObject:insterIndexPath];
         }
         
-        [self.eventHandler.dataSource removeObjectsInRange:NSMakeRange(indexPath.row+1, leaderModel.group.count)];
+        [[self.eventHandler getDataSource] removeObjectsInRange:NSMakeRange(indexPath.row+1, leaderModel.group.count)];
         
         dispatch_async(dispatch_get_main_queue(), ^(){
             
@@ -215,15 +215,15 @@
     
     if (self.searchController.active) {
         
-        return self.eventHandler.results.count ;
+        return [self.eventHandler getResults].count ;
     }
     
-    return self.eventHandler.dataSource.count;
+    return [self.eventHandler getDataSource].count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    id model = (self.searchController.active)?[self.eventHandler.results objectAtIndex:indexPath.row]:[self.eventHandler.dataSource objectAtIndex:indexPath.row];
+    id model = (self.searchController.active)?[[self.eventHandler getResults] objectAtIndex:indexPath.row]:[[self.eventHandler getDataSource] objectAtIndex:indexPath.row];
     
     NSString *cellReuseIdentifier = NSStringFromClass([model class]);
     
@@ -240,7 +240,7 @@
     
     if (self.searchController.active) return;
     
-    id model = [self.eventHandler.dataSource objectAtIndex:indexPath.row];
+    id model = [[self.eventHandler getDataSource] objectAtIndex:indexPath.row];
     
     if ([model isMemberOfClass:[CUBInviteModel class]]) {
         CUBInviteModel *leaderModel = (CUBInviteModel *)model;
@@ -262,17 +262,17 @@
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
     
     NSString *inputStr = searchController.searchBar.text ;
-       if (self.eventHandler.results.count > 0) {
-           [self.eventHandler.results removeAllObjects];
+       if ([self.eventHandler getResults].count > 0) {
+           [[self.eventHandler getResults] removeAllObjects];
        }
-       for (id model in self.eventHandler.dataSource) {
+       for (id model in [self.eventHandler getDataSource]) {
            
            CUBFriendModel *memberFriendModel = nil;
            if ([model isMemberOfClass:[CUBFriendModel class]]) {
                memberFriendModel = model;
                
                if ([memberFriendModel.name.lowercaseString rangeOfString:inputStr.lowercaseString].location != NSNotFound) {
-                   [self.eventHandler.results addObject:memberFriendModel];
+                   [[self.eventHandler getResults] addObject:memberFriendModel];
                }
            }
        }
@@ -298,8 +298,8 @@
 - (void)search {
     
     NSPredicate *p = [NSPredicate predicateWithFormat:@"self isMemberOfClass: %@", [CUBSearchModel class]];
-    NSArray * filtered = [self.eventHandler.dataSource filteredArrayUsingPredicate:p];
-    NSInteger row = [self.eventHandler.dataSource indexOfObject:[filtered firstObject]];
+    NSArray * filtered = [[self.eventHandler getDataSource] filteredArrayUsingPredicate:p];
+    NSInteger row = [[self.eventHandler getDataSource] indexOfObject:[filtered firstObject]];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:0];
     
     dispatch_async(dispatch_get_main_queue(), ^(){
@@ -321,8 +321,8 @@
 - (void)test1 {
     
     [self.eventHandler get_status_no_friend:^(NSArray *dataSource) {
-        self.eventHandler.testType = CUBTestType1;
-        self.eventHandler.dataSource = dataSource.mutableCopy;
+        [self.eventHandler updateTestType:CUBTestType1];
+        [self.eventHandler updateDataSource:dataSource];
         [self.tableView reloadData];
     }];
     
@@ -331,8 +331,8 @@
 - (void)test2 {
     
     [self.eventHandler get_status_friend:^(NSArray *dataSource) {
-        self.eventHandler.testType = CUBTestType2;
-        self.eventHandler.dataSource = dataSource.mutableCopy;
+        [self.eventHandler updateTestType:CUBTestType2];
+        [self.eventHandler updateDataSource:dataSource];
         [self.tableView reloadData];
     }];
     
@@ -341,8 +341,8 @@
 - (void)test3 {
     
     [self.eventHandler get_status_friend_and_invite:^(NSArray *dataSource) {
-        self.eventHandler.testType = CUBTestType3;
-        self.eventHandler.dataSource = dataSource.mutableCopy;
+        [self.eventHandler updateTestType:CUBTestType3];
+        [self.eventHandler updateDataSource:dataSource];
         [self.tableView reloadData];
     }];
     
