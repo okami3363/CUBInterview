@@ -7,16 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CUBFriendModuleInterface.h"
 @class CUBFriendWireframe;
 @class CUBFriendInteractor;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CUBFriendPresenter : NSObject <CUBFriendModuleInterface>
+@interface CUBFriendPresenter : NSObject
 
 @property (nonatomic, strong, nullable) CUBFriendWireframe *wireframe;
 @property (nonatomic, strong, nullable) CUBFriendInteractor *interactor;
+
+@property (nonatomic, strong) NSMutableArray *dataSource;
+
+- (void)get_status_no_friend:(void(^)(NSArray*))entitiesData;
+- (void)get_status_friend:(void(^)(NSArray*))entitiesData;
+- (void)get_status_friend_and_invite:(void(^)(NSArray*))entitiesData;
 
 @end
 

@@ -11,6 +11,15 @@
 
 @implementation CUBFriendPresenter
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _dataSource = @[].mutableCopy;
+    }
+    return self;
+}
+
 - (void)get_status_no_friend:(void(^)(NSArray*))entitiesData {
     [self.interactor get_status_no_friend:entitiesData];
 }

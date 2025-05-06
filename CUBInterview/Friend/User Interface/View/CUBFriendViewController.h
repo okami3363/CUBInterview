@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CUBFriendModuleInterface.h"
+
+#import "CUBFriendPresenter.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CUBFriendViewController : UIViewController <CUBFriendModuleInterface>
+@interface CUBFriendViewController : UIViewController
 
-@property (nonatomic, strong) id <CUBFriendModuleInterface> eventHandler;
+@property (nonatomic, strong) CUBFriendPresenter *eventHandler;
 
 @end
 

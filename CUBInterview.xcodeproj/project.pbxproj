@@ -73,7 +73,6 @@
 		71ED3CBC2358899C0069DD51 /* CUBFriendDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUBFriendDataManager.m; sourceTree = "<group>"; };
 		71ED3CBE2358899C0069DD51 /* CUBFriendInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUBFriendInteractor.h; sourceTree = "<group>"; };
 		71ED3CBF2358899C0069DD51 /* CUBFriendInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUBFriendInteractor.m; sourceTree = "<group>"; };
-		71ED3CC22358899C0069DD51 /* CUBFriendModuleInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUBFriendModuleInterface.h; sourceTree = "<group>"; };
 		71ED3CC42358899C0069DD51 /* CUBFriendPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUBFriendPresenter.h; sourceTree = "<group>"; };
 		71ED3CC52358899C0069DD51 /* CUBFriendPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUBFriendPresenter.m; sourceTree = "<group>"; };
 		71ED3CC72358899C0069DD51 /* CUBFriendWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUBFriendWireframe.h; sourceTree = "<group>"; };
@@ -206,19 +205,10 @@
 			isa = PBXGroup;
 			children = (
 				71ED3CC92358899C0069DD51 /* View */,
-				71ED3CC12358899C0069DD51 /* Module Interface */,
 				71ED3CC62358899C0069DD51 /* Wireframe */,
 				71ED3CC32358899C0069DD51 /* Presenter */,
 			);
 			path = "User Interface";
-			sourceTree = "<group>";
-		};
-		71ED3CC12358899C0069DD51 /* Module Interface */ = {
-			isa = PBXGroup;
-			children = (
-				71ED3CC22358899C0069DD51 /* CUBFriendModuleInterface.h */,
-			);
-			path = "Module Interface";
 			sourceTree = "<group>";
 		};
 		71ED3CC32358899C0069DD51 /* Presenter */ = {
