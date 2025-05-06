@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nullable) CUBFriendInteractor *interactor;
 
 @property (nonatomic, strong) NSMutableArray *dataSource;
+@property (nonatomic, strong) NSMutableArray *results;
 
 - (void)get_status_no_friend:(void(^)(NSArray*))entitiesData;
 - (void)get_status_friend:(void(^)(NSArray*))entitiesData;

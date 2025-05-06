@@ -16,6 +16,7 @@
     self = [super init];
     if (self) {
         _dataSource = @[].mutableCopy;
+        _results = @[].mutableCopy;
     }
     return self;
 }
