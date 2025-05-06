@@ -132,7 +132,7 @@
 				7125C6EF23579392007B73B9 /* SceneDelegate.h */,
 				7125C6F023579392007B73B9 /* SceneDelegate.m */,
 				71ED3C912358891D0069DD51 /* Utility */,
-				71ED3CAA2358891D0069DD51 /* RootWireframe */,
+				71ED3CAA2358891D0069DD51 /* RootRouter */,
 				71ED3CB82358899C0069DD51 /* Friend */,
 				7125C6FB23579394007B73B9 /* Assets.xcassets */,
 				7125C6FD23579394007B73B9 /* LaunchScreen.storyboard */,
@@ -153,7 +153,7 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		71ED3CAA2358891D0069DD51 /* RootWireframe */ = {
+		71ED3CAA2358891D0069DD51 /* RootRouter */ = {
 			isa = PBXGroup;
 			children = (
 				71ED3CAB2358891D0069DD51 /* CUBAppDependencies.h */,
@@ -161,26 +161,19 @@
 				71ED3CAC2358891D0069DD51 /* CUBRootWireframe.h */,
 				71ED3CAE2358891D0069DD51 /* CUBRootWireframe.m */,
 			);
-			path = RootWireframe;
+			path = RootRouter;
 			sourceTree = "<group>";
 		};
 		71ED3CB82358899C0069DD51 /* Friend */ = {
 			isa = PBXGroup;
 			children = (
-				71ED3CC02358899C0069DD51 /* User Interface */,
-				71ED3CB92358899C0069DD51 /* Application Logic */,
+				71ED3CC92358899C0069DD51 /* View */,
+				71ED3CC62358899C0069DD51 /* Router */,
+				71ED3CC32358899C0069DD51 /* Presenter */,
+				71ED3CBD2358899C0069DD51 /* Interactor */,
+				71ED3CD123589AE20069DD51 /* Entity */,
 			);
 			path = Friend;
-			sourceTree = "<group>";
-		};
-		71ED3CB92358899C0069DD51 /* Application Logic */ = {
-			isa = PBXGroup;
-			children = (
-				71ED3CBD2358899C0069DD51 /* Interactor */,
-				71ED3CBA2358899C0069DD51 /* DataManager */,
-				71ED3CD123589AE20069DD51 /* Model */,
-			);
-			path = "Application Logic";
 			sourceTree = "<group>";
 		};
 		71ED3CBA2358899C0069DD51 /* DataManager */ = {
@@ -197,18 +190,9 @@
 			children = (
 				71ED3CBE2358899C0069DD51 /* CUBFriendInteractor.h */,
 				71ED3CBF2358899C0069DD51 /* CUBFriendInteractor.m */,
+				71ED3CBA2358899C0069DD51 /* DataManager */,
 			);
 			path = Interactor;
-			sourceTree = "<group>";
-		};
-		71ED3CC02358899C0069DD51 /* User Interface */ = {
-			isa = PBXGroup;
-			children = (
-				71ED3CC92358899C0069DD51 /* View */,
-				71ED3CC62358899C0069DD51 /* Wireframe */,
-				71ED3CC32358899C0069DD51 /* Presenter */,
-			);
-			path = "User Interface";
 			sourceTree = "<group>";
 		};
 		71ED3CC32358899C0069DD51 /* Presenter */ = {
@@ -220,13 +204,13 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		71ED3CC62358899C0069DD51 /* Wireframe */ = {
+		71ED3CC62358899C0069DD51 /* Router */ = {
 			isa = PBXGroup;
 			children = (
 				71ED3CC72358899C0069DD51 /* CUBFriendWireframe.h */,
 				71ED3CC82358899C0069DD51 /* CUBFriendWireframe.m */,
 			);
-			path = Wireframe;
+			path = Router;
 			sourceTree = "<group>";
 		};
 		71ED3CC92358899C0069DD51 /* View */ = {
@@ -251,7 +235,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		71ED3CD123589AE20069DD51 /* Model */ = {
+		71ED3CD123589AE20069DD51 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
 				71ED3CDB2358E8870069DD51 /* CUBModelBaseClass.h */,
@@ -267,7 +251,7 @@
 				715ABECB2359C5EB004D0BF7 /* CUBInviteModel.h */,
 				715ABECC2359C5EC004D0BF7 /* CUBInviteModel.m */,
 			);
-			path = Model;
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		C4B1B8328E4D24C528B2D377 /* Pods */ = {
