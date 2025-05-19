@@ -107,6 +107,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71066A532DDBC3D900CA6333 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				715ABED1235A128A004D0BF7 /* CUBTableViewCellProtocol.h */,
+				71ED3CD82358E3EF0069DD51 /* CUBTableViewCellBaseClass.h */,
+				71ED3CD92358E3EF0069DD51 /* CUBTableViewCellBaseClass.m */,
+				71ED3CE12358F5950069DD51 /* CUBUserTableViewCell.h */,
+				71ED3CE22358F5950069DD51 /* CUBUserTableViewCell.m */,
+				715ABEBF23599E31004D0BF7 /* CUBNoFriendTableViewCell.h */,
+				715ABEC023599E31004D0BF7 /* CUBNoFriendTableViewCell.m */,
+				715ABEC52359AE79004D0BF7 /* CUBSearchTableViewCell.h */,
+				715ABEC62359AE79004D0BF7 /* CUBSearchTableViewCell.m */,
+				71ED3CD52358BA8D0069DD51 /* CUBFriendTableViewCell.h */,
+				71ED3CD62358BA8D0069DD51 /* CUBFriendTableViewCell.m */,
+				715ABECE2359C7FC004D0BF7 /* CUBInviteTableViewCell.h */,
+				715ABECF2359C7FC004D0BF7 /* CUBInviteTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		7125C6E023579392007B73B9 = {
 			isa = PBXGroup;
 			children = (
@@ -220,19 +240,7 @@
 			children = (
 				71ED3CCB2358899C0069DD51 /* CUBFriendViewController.h */,
 				71ED3CCA2358899C0069DD51 /* CUBFriendViewController.m */,
-				715ABED1235A128A004D0BF7 /* CUBTableViewCellProtocol.h */,
-				71ED3CD82358E3EF0069DD51 /* CUBTableViewCellBaseClass.h */,
-				71ED3CD92358E3EF0069DD51 /* CUBTableViewCellBaseClass.m */,
-				71ED3CE12358F5950069DD51 /* CUBUserTableViewCell.h */,
-				71ED3CE22358F5950069DD51 /* CUBUserTableViewCell.m */,
-				715ABEBF23599E31004D0BF7 /* CUBNoFriendTableViewCell.h */,
-				715ABEC023599E31004D0BF7 /* CUBNoFriendTableViewCell.m */,
-				715ABEC52359AE79004D0BF7 /* CUBSearchTableViewCell.h */,
-				715ABEC62359AE79004D0BF7 /* CUBSearchTableViewCell.m */,
-				71ED3CD52358BA8D0069DD51 /* CUBFriendTableViewCell.h */,
-				71ED3CD62358BA8D0069DD51 /* CUBFriendTableViewCell.m */,
-				715ABECE2359C7FC004D0BF7 /* CUBInviteTableViewCell.h */,
-				715ABECF2359C7FC004D0BF7 /* CUBInviteTableViewCell.m */,
+				71066A532DDBC3D900CA6333 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
