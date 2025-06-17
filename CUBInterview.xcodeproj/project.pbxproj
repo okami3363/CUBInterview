@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		715ABECA2359AEF4004D0BF7 /* CUBSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 715ABEC92359AEF4004D0BF7 /* CUBSearchModel.m */; };
 		715ABECD2359C5EC004D0BF7 /* CUBInviteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 715ABECC2359C5EC004D0BF7 /* CUBInviteModel.m */; };
 		715ABED02359C7FC004D0BF7 /* CUBInviteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 715ABECF2359C7FC004D0BF7 /* CUBInviteTableViewCell.m */; };
+		71EC740C2E01F426009D26D6 /* CUBFriendDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3CBC2358899C0069DD51 /* CUBFriendDataManager.m */; };
 		71ED3CAF2358891D0069DD51 /* CUBApiClientCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3C922358891D0069DD51 /* CUBApiClientCenter.m */; };
 		71ED3CB02358891D0069DD51 /* CUBNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3C932358891D0069DD51 /* CUBNetworking.m */; };
 		71ED3CB62358891D0069DD51 /* CUBAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3CAD2358891D0069DD51 /* CUBAppDependencies.m */; };
@@ -35,6 +36,16 @@
 		71ED3CE02358EA520069DD51 /* CUBUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3CDF2358EA520069DD51 /* CUBUserModel.m */; };
 		71ED3CE32358F5950069DD51 /* CUBUserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED3CE22358F5950069DD51 /* CUBUserTableViewCell.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71EC74042E01E4C8009D26D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7125C6E123579392007B73B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7125C6E823579392007B73B9;
+			remoteInfo = CUBInterview;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1302952F02F6494425229F2B /* Pods_CUBInterview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CUBInterview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +73,7 @@
 		715ABECF2359C7FC004D0BF7 /* CUBInviteTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUBInviteTableViewCell.m; sourceTree = "<group>"; };
 		715ABED1235A128A004D0BF7 /* CUBTableViewCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBTableViewCellProtocol.h; sourceTree = "<group>"; };
 		71849D0A2DCA4CFF00CF15F2 /* CUBFriendModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBFriendModuleInterface.h; sourceTree = "<group>"; };
+		71EC74002E01E4C8009D26D6 /* CUBInterviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CUBInterviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71ED3C922358891D0069DD51 /* CUBApiClientCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUBApiClientCenter.m; sourceTree = "<group>"; };
 		71ED3C932358891D0069DD51 /* CUBNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUBNetworking.m; sourceTree = "<group>"; };
 		71ED3C942358891D0069DD51 /* CUBApiClientCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUBApiClientCenter.h; sourceTree = "<group>"; };
@@ -95,12 +107,23 @@
 		EBCCD127A69ABD4AD7AC5532 /* Pods-CUBInterview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CUBInterview.debug.xcconfig"; path = "Target Support Files/Pods-CUBInterview/Pods-CUBInterview.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		71EC74012E01E4C8009D26D6 /* CUBInterviewTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CUBInterviewTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		7125C6E623579392007B73B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				58FA17429812062A9BC5D3FA /* Pods_CUBInterview.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71EC73FD2E01E4C8009D26D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				7125C6EB23579392007B73B9 /* CUBInterview */,
+				71EC74012E01E4C8009D26D6 /* CUBInterviewTests */,
 				7125C6EA23579392007B73B9 /* Products */,
 				C4B1B8328E4D24C528B2D377 /* Pods */,
 				F5260973CFF7D799CF04A55A /* Frameworks */,
@@ -141,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				7125C6E923579392007B73B9 /* CUBInterview.app */,
+				71EC74002E01E4C8009D26D6 /* CUBInterviewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -303,6 +328,29 @@
 			productReference = 7125C6E923579392007B73B9 /* CUBInterview.app */;
 			productType = "com.apple.product-type.application";
 		};
+		71EC73FF2E01E4C8009D26D6 /* CUBInterviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71EC74082E01E4C8009D26D6 /* Build configuration list for PBXNativeTarget "CUBInterviewTests" */;
+			buildPhases = (
+				71EC73FC2E01E4C8009D26D6 /* Sources */,
+				71EC73FD2E01E4C8009D26D6 /* Frameworks */,
+				71EC73FE2E01E4C8009D26D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71EC74052E01E4C8009D26D6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				71EC74012E01E4C8009D26D6 /* CUBInterviewTests */,
+			);
+			name = CUBInterviewTests;
+			packageProductDependencies = (
+			);
+			productName = CUBInterviewTests;
+			productReference = 71EC74002E01E4C8009D26D6 /* CUBInterviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -315,6 +363,10 @@
 				TargetAttributes = {
 					7125C6E823579392007B73B9 = {
 						CreatedOnToolsVersion = 11.1;
+					};
+					71EC73FF2E01E4C8009D26D6 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 7125C6E823579392007B73B9;
 					};
 				};
 			};
@@ -332,6 +384,7 @@
 			projectRoot = "";
 			targets = (
 				7125C6E823579392007B73B9 /* CUBInterview */,
+				71EC73FF2E01E4C8009D26D6 /* CUBInterviewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -343,6 +396,13 @@
 			files = (
 				7125C6FF23579394007B73B9 /* LaunchScreen.storyboard in Resources */,
 				7125C6FC23579394007B73B9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71EC73FE2E01E4C8009D26D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +482,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		71EC73FC2E01E4C8009D26D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71EC740C2E01F426009D26D6 /* CUBFriendDataManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71EC74052E01E4C8009D26D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7125C6E823579392007B73B9 /* CUBInterview */;
+			targetProxy = 71EC74042E01E4C8009D26D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7125C6FD23579394007B73B9 /* LaunchScreen.storyboard */ = {
@@ -588,6 +664,50 @@
 			};
 			name = Release;
 		};
+		71EC74062E01E4C8009D26D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.okami3363.CUBInterviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CUBInterview.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CUBInterview";
+			};
+			name = Debug;
+		};
+		71EC74072E01E4C8009D26D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.okami3363.CUBInterviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CUBInterview.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CUBInterview";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -605,6 +725,15 @@
 			buildConfigurations = (
 				7125C70623579394007B73B9 /* Debug */,
 				7125C70723579394007B73B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71EC74082E01E4C8009D26D6 /* Build configuration list for PBXNativeTarget "CUBInterviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71EC74062E01E4C8009D26D6 /* Debug */,
+				71EC74072E01E4C8009D26D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
