@@ -33,9 +33,9 @@
 
 - (void)testPerformanceExample {
     // 這是效能測試的範例
-    [self measureBlock:^{
+    //[self measureBlock:^{
         // 把你想要測試效能的程式碼寫在這裡
-    }];
+    //}];
 }
 
 //CUBFriendDataManager getFriend1 打api成功測試
