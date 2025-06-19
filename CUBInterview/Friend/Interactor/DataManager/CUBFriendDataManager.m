@@ -34,6 +34,9 @@
 
 - (void)getFriend1Success:(void (^)(NSArray * _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
     
+    //跑測試用，模擬錯誤
+    [self mockFailForTesting:failure success:success];
+    
     NSString *urlString = @"https://okami3363.github.io/friend1.json";
     
     [[CUBApiClientCenter sharedInstance] httpGetRespondArrayDataHandel:urlString success:^(NSArray * _Nonnull dataArrry) {
@@ -66,6 +69,16 @@
         failure(error);
     }];
     
+}
+
+#pragma mark - private
+
+//跑測試用，模擬錯誤
+- (void)mockFailForTesting:(void (^ _Nonnull)(NSError * _Nonnull))failure success:(void (^ _Nonnull)(NSArray * _Nonnull))success {
+    if (self.shouldFailForTesting) {
+        NSError *error = [NSError errorWithDomain:@"TestError" code:999 userInfo:nil];
+        failure(error);
+    }
 }
 
 @end

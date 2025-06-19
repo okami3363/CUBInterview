@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CUBFriendDataManager : NSObject
 
+//跑測試用，模擬錯誤
+@property (nonatomic, assign) BOOL shouldFailForTesting;
+
 - (void)getUserDataSuccess:(void (^)(NSArray *success))success failure:(void (^)(NSError *error))failure;
 
 - (void)getNoFriendSuccess:(void (^)(NSArray *success))success failure:(void (^)(NSError *error))failure;
