@@ -43,6 +43,7 @@
     XCTestExpectation *expectation = [self expectationWithDescription:@"getFriend1 成功回傳"];
 
     CUBFriendDataManager *manager = [[CUBFriendDataManager alloc] init];
+    manager.mockCase = MockCase_Success;
     
     [manager getFriend1Success:^(NSArray *success) {
         XCTAssertNotNil(success, @"回傳資料不可為 nil");
@@ -60,7 +61,7 @@
     XCTestExpectation *expectation = [self expectationWithDescription:@"getFriend1 錯誤回傳"];
 
     CUBFriendDataManager *manager = [[CUBFriendDataManager alloc] init];
-    manager.shouldFailForTesting = YES;
+    manager.mockCase = MockCase_Fail;
     
     [manager getFriend1Success:^(NSArray *success) {
         XCTFail(@"不應該進入成功 callback");

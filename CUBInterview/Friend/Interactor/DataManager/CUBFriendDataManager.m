@@ -34,8 +34,9 @@
 
 - (void)getFriend1Success:(void (^)(NSArray * _Nonnull))success failure:(void (^)(NSError * _Nonnull))failure {
     
-    //跑測試用，模擬錯誤
-    [self mockFailForTesting:failure success:success];
+    //跑測試用，模擬測試資料
+    [self mockForTesting:failure success:success];
+    if (self.mockCase != MockCase_None) return;
     
     NSString *urlString = @"https://okami3363.github.io/friend1.json";
     
@@ -73,11 +74,33 @@
 
 #pragma mark - private
 
-//跑測試用，模擬錯誤
-- (void)mockFailForTesting:(void (^ _Nonnull)(NSError * _Nonnull))failure success:(void (^ _Nonnull)(NSArray * _Nonnull))success {
-    if (self.shouldFailForTesting) {
-        NSError *error = [NSError errorWithDomain:@"TestError" code:999 userInfo:nil];
-        failure(error);
+//跑測試用，模擬測試資料
+- (void)mockForTesting:(void (^ _Nonnull)(NSError * _Nonnull))failure success:(void (^ _Nonnull)(NSArray * _Nonnull))success {
+    
+    switch (self.mockCase) {
+        case MockCase_None:
+            break;
+            
+        case MockCase_Success:{
+            NSArray *array = @[@{@"name": @"黃靖僑",
+                                 @"status": @0,
+                                 @"isTop": @"0",
+                                 @"fid": @"001",
+                                 @"updateDate": @"20190801"},
+                               @{@"name": @"翁勳儀",
+                                 @"status": @2,
+                                 @"isTop": @"1",
+                                 @"fid": @"002",
+                                 @"updateDate": @"20190802"}];
+            success(array);
+        }
+            break;
+            
+        case MockCase_Fail:{
+            NSError *error = [NSError errorWithDomain:@"TestError" code:999 userInfo:nil];
+            failure(error);
+        }
+            break;
     }
 }
 

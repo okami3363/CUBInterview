@@ -72,6 +72,7 @@
 		715ABECE2359C7FC004D0BF7 /* CUBInviteTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBInviteTableViewCell.h; sourceTree = "<group>"; };
 		715ABECF2359C7FC004D0BF7 /* CUBInviteTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUBInviteTableViewCell.m; sourceTree = "<group>"; };
 		715ABED1235A128A004D0BF7 /* CUBTableViewCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBTableViewCellProtocol.h; sourceTree = "<group>"; };
+		716809BD2E06F3D10052840D /* CUBInterview.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CUBInterview.xctestplan; sourceTree = "<group>"; };
 		71849D0A2DCA4CFF00CF15F2 /* CUBFriendModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBFriendModuleInterface.h; sourceTree = "<group>"; };
 		71EC74002E01E4C8009D26D6 /* CUBInterviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CUBInterviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71ED3C922358891D0069DD51 /* CUBApiClientCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUBApiClientCenter.m; sourceTree = "<group>"; };
@@ -153,6 +154,7 @@
 		7125C6E023579392007B73B9 = {
 			isa = PBXGroup;
 			children = (
+				716809BD2E06F3D10052840D /* CUBInterview.xctestplan */,
 				7125C6EB23579392007B73B9 /* CUBInterview */,
 				71EC74012E01E4C8009D26D6 /* CUBInterviewTests */,
 				7125C6EA23579392007B73B9 /* Products */,
@@ -439,9 +441,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CUBInterview/Pods-CUBInterview-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CUBInterview/Pods-CUBInterview-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -10,10 +10,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+//跑測試用，模擬測試資料
+typedef NS_ENUM(NSUInteger, MockCase) {
+    MockCase_None,
+    MockCase_Success,
+    MockCase_Fail,
+};
+
 @interface CUBFriendDataManager : NSObject
 
-//跑測試用，模擬錯誤
-@property (nonatomic, assign) BOOL shouldFailForTesting;
+//跑測試用，模擬測試資料
+@property (nonatomic, assign) MockCase mockCase;
 
 - (void)getUserDataSuccess:(void (^)(NSArray *success))success failure:(void (^)(NSError *error))failure;
 

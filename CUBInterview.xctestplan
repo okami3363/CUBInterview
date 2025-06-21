@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "600D6ED4-98AB-40D0-80D1-B4FD29B6D936",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:CUBInterview.xcodeproj",
+        "identifier" : "71EC73FF2E01E4C8009D26D6",
+        "name" : "CUBInterviewTests"
+      }
+    }
+  ],
+  "version" : 1
+}
